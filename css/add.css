@@ -1,0 +1,26 @@
+ul.featured-cars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+ul.featured-cars li {
+    width: calc(100% / 4 - 20px);
+    height: auto;
+    margin: 0 20px 20px 0;
+    padding: 0;
+    overflow: hidden;
+    display:block;
+}
+ul.featured-cars li img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    ul.featured-cars li {
+    width: calc(100% / 2 - 10px);
+    margin: 0 10px 10px 0;
+
+}
+
+}
