@@ -22,5 +22,27 @@ ul.featured-cars li img {
     margin: 0 10px 10px 0;
 
 }
-
 }
+/* 初期状態：空間を保ちつつ非表示 */
+.main-section {
+  opacity: 0;
+  transform: translateY(1rem);
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0s linear 0.6s;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* 表示状態：アニメーションで自然に表示 */
+.main-section {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+
+
